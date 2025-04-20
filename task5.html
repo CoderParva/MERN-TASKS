@@ -3,163 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task-5</title>
+    <title>Task 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .head{
-            color:blue;
-            font-size: 40px;
-            font-weight: bold;
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
         }
-        /* h2{
-            color:blue;
-            font-size: 40px;
-            font-weight: bold;
-        } */
+        .container {
+            max-width: 400px;
+            margin-top: 50px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .error-input {
+            border: 1px solid red !important;
+            background-color: #ffe6e6;
+        }
+        .btn {
+            width: 100%;
+            padding: 8px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <div><a href="./index.html">Back to Index Page</a></div>
-    <center>
-        </br>
-        <!-- <div class="head">Registration form</div> -->
-        <!-- <h2>Registration form</h2> -->
-        </br>
-        <form action="" method="get">
-            <table border="1" cellspacing="0">
-                <thead>
-                    <div class="head">
-                        Registration form
-                    </div>
-                </thead>
-                <br/>
-                <tbody>
-                    <tr>
-                        <th>
-                            <label for="fname">First Name</label>
-                        </th>
-                        <td>
-                            <input type="text" name="fname" id="fname" size="60">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="lname">Last Name</label>
-                        </th>
-                        <td>
-                            <input type="text" name="lname" id="lname" size="60">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="email">Email</label>
-                        </th>
-                        <td>
-                            <input type="email" name="email" id="email" size="60">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="password">Password</label>
-                        </th>
-                        <td>
-                            <input type="password" name="password" id="password" size="60">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="repassword">Re-enter Password</label>
-                        </th>
-                        <td>
-                            <input type="password" name="repassword" id="repassword" size="60">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th rowspan="2">
-                            <label for="gender">Gender:</label>
-                        </th>
-                        <td>
-                            <input type="radio" name="gender" id="male"> Male
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="radio" name="gender" id="female"> Female
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="age">Age:</label>
-                        </th>
-                        <td>
-                            <input type="text" name="age" id="age" size="60">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="phone">Phone Number</label>
-                        </th>
-                        <td>
-                            <input type="tel" name="phone" id="phone" size="60">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="address">Address</label>
-                        </th>   
-                        <td>
-                            <textarea name="address" id="address" cols="56" rows="5"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="state">State</label>
-                        </th>
-                        <td>
-                            <input type="text" name="state" id="state" size="60">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="country">Country</label>
-                        </th>
-                        <td>
-                            <select name="country" id="country">
-                                <option value="">Choose your country</option>
-                                <option value="india">India</option>
-                                <option value="usa">USA</option>
-                                <option value="uk">UK</option>
-                                <option value="china">China</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="lang">Languages Known</label>
-                        </th>
-                        <td>
-                            <input type="checkbox" name="lang" id="lang" value="English"> English
-                            <input type="checkbox" name="lang" id="lang" value="Kannada"> Kannada
-                            <input type="checkbox" name="lang" id="lang" value="Hindi"> Hindi
-                            <input type="checkbox" name="lang" id="lang" value="Telugu"> Telugu
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="checkbox" name="terms" id="terms">
-                            <label for="terms">Hereby I declare all the given details are true</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="right">
-                            Log in to
-                            <a href="https://www.ethnus.com/">Ethnus</a>
-                            website
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><input type="submit" value="Register"></p>
-        </form>
-    </center>
+
+<div class="container">
+    <h2>Form Validation</h2>
+    <form id="validationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <p class="error" id="nameError"></p>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        <p class="error" id="emailError"></p>
+
+        <label for="website">Website:</label>
+        <input type="text" id="website">
+        <p class="error" id="websiteError"></p>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4"></textarea>
+        <p class="error" id="messageError"></p>
+
+        <button type="button" class="btn" onclick="validateForm()">Submit</button>
+    </form>
+</div>
+
+<script>
+    function validateForm() {
+        let isValid = true;
+
+        // Geting input values
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let website = document.getElementById("website").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+        // Error elements
+        let nameError = document.getElementById("nameError");
+        let emailError = document.getElementById("emailError");
+        let websiteError = document.getElementById("websiteError");
+        let messageError = document.getElementById("messageError");
+
+        // Reset previous errors
+        nameError.innerText = "";
+        emailError.innerText = "";
+        websiteError.innerText = "";
+        messageError.innerText = "";
+        
+        document.getElementById("name").classList.remove("error-input");
+        document.getElementById("email").classList.remove("error-input");
+        document.getElementById("website").classList.remove("error-input");
+        document.getElementById("message").classList.remove("error-input");
+
+        // Name validation
+        if (name === "") {
+            nameError.innerText = "This field is required";
+            document.getElementById("name").classList.add("error-input");
+            isValid = false;
+        }
+
+        // Email validation
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === "") {
+            emailError.innerText = "A valid email address is required";
+            document.getElementById("email").classList.add("error-input");
+            isValid = false;
+        } else if (!emailPattern.test(email)) {
+            emailError.innerText = "Enter a valid email address";
+            document.getElementById("email").classList.add("error-input");
+            isValid = false;
+        }
+
+        // Website validation
+        let urlPattern = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/;
+        if (website === "") {
+            websiteError.innerText = "A valid URL is required";
+            document.getElementById("website").classList.add("error-input");
+            isValid = false;
+        } else if (!urlPattern.test(website)) {
+            websiteError.innerText = "Enter a valid website URL";
+            document.getElementById("website").classList.add("error-input");
+            isValid = false;
+        }
+
+        // Message validation
+        if (message === "") {
+            messageError.innerText = "This field is required";
+            document.getElementById("message").classList.add("error-input");
+            isValid = false;
+        }
+
+        // Form submission checking
+        if (isValid) {
+            alert("Form submitted successfully!");
+        }
+    }
+</script>
+
 </body>
 </html>
